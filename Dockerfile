@@ -1,5 +1,4 @@
 FROM ubuntu
-
 MAINTAINER  motog5plusmobile@gmail.com
 RUN apt install update
 RUN apt install -y apache2 \
