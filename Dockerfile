@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos
 MAINTAINER  motog5plusmobile@gmail.com
 RUN yum install -y httpd \
   zip \
