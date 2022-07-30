@@ -10,5 +10,5 @@ WORKDIR /var/www/html
 RUN unzip limelight.zip
 RUN cp -rvf limelight-html/* .
 RUN rm -rf limelight-html limelight.zip
-ENTRYPOINT apachectl -D FOREGROUND
 EXPOSE 80
+CMD apachectl -D FOREGROUND
