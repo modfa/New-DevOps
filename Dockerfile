@@ -15,3 +15,5 @@ RUN cp -rvf ogistic/* .
 RUN rm -rf ogistic ogistic.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
+
+#This is the new website 
