@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:latest
 RUN cd /etc/yum.repos.d/
 RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
 RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
@@ -13,5 +13,5 @@ WORKDIR /var/www/html
 RUN unzip limelight.zip
 RUN cp -rvf limelight-html/* .
 RUN rm -rf limelight-html limelight.zip
-CMD ["usr/sbin/httpd"," -D"," FOREGROUND"]
+CMD ["usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
