@@ -17,3 +17,4 @@ CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
 
 #This is the new website after changing the url
+#This new line is also added to this file for checking some functionality
