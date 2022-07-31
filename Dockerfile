@@ -16,4 +16,4 @@ RUN rm -rf ogistic ogistic.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
 
-#This is the new website 
+#This is the new website after changing the url
