@@ -19,7 +19,6 @@
 #This is the new website after changing the url
 #This new line is also added to this file for checking some functionality
 
-
 FROM centos:latest
 RUN cd /etc/yum.repos.d/
 RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
